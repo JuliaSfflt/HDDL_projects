@@ -1,17 +1,7 @@
-Objectif de fin (date):
-- Projet 1 : 27 octobre
-- Projet 2 : 17 novembre
-- Projet 3 : 1 décembre
-- Projet 4 : 15 décembre
-
-
 Projet 1
 
-1) Problème de classification: On choisit d'utiliser un CNN car les données sont des images et on veut conserver leur structure (ie sans flatten)
-   Pensez à redimensionner les images. On choisit d'entrainer le réseau sur les images en high quality pour minimiser les pertes associées au redimensionnement. On pourra aussi comparer les performances high et low quality par la suite.
-   Attention aux catégories après le split
-   Utiliser le data augmentation pour les catégories qui ont moins de _________ images.
-3) Problème du nombre d'image pour les artistes qui n'en ont pas peint assez pour que l'apprentissage "fonctionne"
+Le but de ce projet est de développer un modèle capable de prédire l'artiste d'une œuvre d'art à partir de son image, dans le cadre du défi Art Challenge. Nous utiliserons un jeu de données comportant des œuvres d'art en haute et basse qualité, ainsi que des informations sur les artistes. L’objectif est de construire un réseau de neurones convolutifs (CNN) pour effectuer cette tâche de classification d'images. Ce rapport présente la démarche suivie, notamment le choix des images à étudier, l'architecture du réseau utilisée, ainsi que les différentes étapes de prétraitement et d'entraînement du modèle.
+
 
 Projet 2 : 
 
@@ -36,6 +26,7 @@ Enfin, nous avons générer cinq échantillons pour chaque classe de CVAE afin d
 
 
 Projet 3 : 
+
 L’objectif de ce projet est d’explorer l’apprentissage auto-supervisé (Self-Supervised Learning - SSL) pour la détection d’anomalies sur des jeux de données d’images industriels. Nous avons travaillé sur deux bases de données principales : MVTec_AD avec les catégories bottle, hazelnut, capsule et toothbrush, Auto_VI avec la catégorie engine_wiring.
 
 Afin de tirer parti des données non étiquetées, nous avons implémenté plusieurs tâches prétextes qui permettent au modèle d’apprendre des représentations latentes pertinentes :
@@ -46,4 +37,14 @@ Afin de tirer parti des données non étiquetées, nous avons implémenté plusi
 L’entraînement a été réalisé exclusivement sur des images sans anomalies pour permettre aux modèles d’apprendre les caractéristiques des données "conformes". Lors de l’évaluation, la reconstruction des images présentant des anomalies s’avère plus difficile pour les modèles, ce qui génère une erreur de reconstruction élevée. Cette erreur devient ainsi un indicateur pour identifier les anomalies.
 
 
+Projet 4 : 
+
+L'objectif de ce mini-projet est de comparer un RNN, un LSTM et un GRU, ainsi que les modèles plus traditionnels comme le MLP et le CNN, sur le dataset IMDB pour la tâche d'analyse de sentiments. Cela signifie qu'à partir des commentaires sur les films dans le dataset IMDB, nous cherchons à construire un modèle capable d'évaluer si un commentaire est positif ou négatif.
+
+Pour réaliser la comparaison entre ces modèles, il est nécessaire d'expliquer et d'évaluer :
+
+- Le choix des architectures : les types de couches, les tailles des couches et les fonctions d'activation.
+- Le choix des hyperparamètres : taille des lots (batch size), taux d'apprentissage (learning rate), nombre d'époques (epochs), poids de régularisation...
+- Le choix de la fonction de perte (loss function).
+- Comparer le temps d'exécution des différents modèles, leur mémoire et leur précision.
    
