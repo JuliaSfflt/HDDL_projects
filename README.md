@@ -14,7 +14,21 @@ Projet 1
 3) Problème du nombre d'image pour les artistes qui n'en ont pas peint assez pour que l'apprentissage "fonctionne"
 
 Projet 2 : 
+
 L'objectif de ce projet est d'étendre nos connaissances acquises sur les autoencodeurs variationnels (variational autoencoders ou VAE) aux autoencodeurs variationnel conditionnel (conditional variational autoencoders ou CVAE). Dans les deux cas, ces modèles sont utilisés pour la génération d'images ; l'apport du second est que l'utilisateur peut spécifier la classe de l'image qu'il souhaite générer (conditionnement). 
+
+Dans le cadre de ce projet, nous avons utilisé le jeu de données *Fashion MNIST*, lequel est composé de 70 000 images en niveaux de gris représentant des articles de mode répartis en 10 catégories : 
+- T-shirt/top
+- Pants
+- Pullover
+- Dress
+- Coat
+- Sandal
+- Shirt
+- Sneaker
+- Bag
+- Ankle boot
+
 
 Projet 3 : 
 L’objectif de ce projet est d’explorer l’apprentissage auto-supervisé (Self-Supervised Learning - SSL) pour la détection d’anomalies sur des jeux de données d’images industriels. Nous avons travaillé sur deux bases de données principales : MVTec_AD avec les catégories bottle, hazelnut, capsule et toothbrush, Auto_VI avec la catégorie engine_wiring.
