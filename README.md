@@ -27,7 +27,11 @@ Dans le cadre de ce projet, nous avons utilisé le jeu de données *Fashion MNIS
 - Shirt
 - Sneaker
 - Bag
-- Ankle boot
+- Ankle boot.
+
+Après avoir séparé le jeux de donnée en une partie d'entrainement et de test, nous avons construit une architecture à 7 couches (3 d'encodeurs, 3 de décodeurs et une couche latente) et entrainer divers modèles, afin de séléctionner les hyperparamètres les plus adaptés à notre jeu de données (soit pour lesquels la perte serait la plus faible). Pour tester les performances de notre séléction et nous assurer de sa pertinence, nous avons comparé les images de test à leur reconstruction par notre CVAE.
+
+Enfin, nous avons générer 
 
 
 Projet 3 : 
